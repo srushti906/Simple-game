@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -6,13 +7,13 @@ int main()
 {
   int top=0,flag=0,top1=0,down=0,b[9];
   char a[3][3];
- cout<<"PRESS NUMBER TO PUT AS BELOW."<<endl<<endl;
+ cout<<"\t\t\t\t\t\t\t";cout<<"PRESS NUMBER TO PUT AS BLOW."<<endl<<endl;
  
-  cout<<"| 1 | 2 | 3 |\n";
-  cout<<"-------------"<<endl;
-  cout<<"| 4 | 5 | 6 |\n";
-  cout<<"-------------"<<endl;
-  cout<<"| 7 | 8 | 9 |\n";
+ cout<<"\t\t\t\t\t\t\t\t"; cout<<"| 1 | 2 | 3 |\n";
+ cout<<"\t\t\t\t\t\t\t\t"; cout<<"-------------"<<endl;
+  cout<<"\t\t\t\t\t\t\t\t";cout<<"| 4 | 5 | 6 |\n";
+  cout<<"\t\t\t\t\t\t\t\t";cout<<"-------------"<<endl;
+ cout<<"\t\t\t\t\t\t\t\t"; cout<<"| 7 | 8 | 9 |\n";
  
  cout<<endl<<endl;
  int n;
@@ -29,20 +30,20 @@ int main()
      {
          if(top%2==0)
          {
-             cout<<"player 1's time to play"<<endl;
-              cout<<"give us number :";
+            cout<<"\t\t\t\t\t\t\t"; cout<<"player 1's time to play"<<endl;
+             cout<<"\t\t\t\t\t\t\t"; cout<<"give us number :";
              cin>>n;
              b[top]=n;
              for(int i=0;i<top;i++)
-             {if(n==b[i])
-             {cout<<"GIVE ANOTHER VALUE OF N:";
+             {while(n==b[i])
+             {cout<<"\t\t\t\t\t\t\t";cout<<"GIVE ANOTHER VALUE OF N:";
              cin>>n;
               cout<<endl;
              }
                  
-             }if(n>9||n<0)
+             }while(n>9||n<0)
              {
-              cout<<"GIVE ANOTHER VALUE OF N:";
+              cout<<"\t\t\t\t\t\t\t";cout<<"GIVE ANOTHER VALUE OF N:";
              cin>>n;
               cout<<endl;  
              }
@@ -70,30 +71,30 @@ int main()
            }
                 cout<<endl;
              for(int i=0;i<3;i++)
-             {
+             {cout<<"\t\t\t\t\t\t\t\t";
                  for(int j=0;j<3;j++)
                  {cout<<a[i][j]<<" | ";}
-                 cout<<endl<<"-----------"<<endl;
+                cout<<endl<<"\t\t\t\t\t\t\t\t-----------"<<endl;
              }
  
              
          }
          else
          {
-              cout<<"player 2's time to play"<<endl;;
-              cout<<"give us number :";
+              cout<<"\t\t\t\t\t\t\t";cout<<"player 2's time to play"<<endl;;
+              cout<<"\t\t\t\t\t\t\t";cout<<"give us number :";
              cin>>n;
              b[top]=n;
              for(int i=0;i<top;i++)
-             {if(n==b[i])
+             {while(n==b[i])
                  {
-                     cout<<"GIVE ANOTHER VALUE OF N:";
+                     cout<<"\t\t\t\t\t\t\tGIVE ANOTHER VALUE OF N:";
                      cin>>n;
                      cout<<endl;
                  }
-             }if(n>9||n<0)
+             }while(n>9||n<0)
              {
-              cout<<"GIVE ANOTHER VALUE OF N:";
+             cout<<"\t\t\t\t\t\t\tGIVE ANOTHER VALUE OF N:";
              cin>>n;
               cout<<endl;  
              }
@@ -121,10 +122,10 @@ int main()
           }
              cout<<endl;
              for(int i=0;i<3;i++)
-             {
+             {cout<<"\t\t\t\t\t\t\t\t";
                  for(int j=0;j<3;j++)
                  {cout<<a[i][j]<<" | ";}
-                 cout<<endl<<"-----------"<<endl;
+                 cout<<endl<<"\t\t\t\t\t\t\t\t-----------"<<endl;
              }
  
          }
@@ -160,12 +161,12 @@ int main()
  if(flag==1)
  {
    if(top%2==0)
-   cout<<"PLAYER 1 WON"<<endl;
+  cout<<"\t\t\t\t\t\t\tPLAYER 1 WON"<<endl;
    else
-   cout<<"PLAYER 2 WON"<<endl;
+   cout<<"\t\t\t\t\t\t\tPLAYER 2 WON"<<endl;
  }
  else
- cout<<"BETTER LUCK NEXT TIME";
+cout<<"\t\t\t\t\t\t\tBETTER LUCK NEXT TIME";
  
     return 0;
 }
